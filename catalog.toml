@@ -1,0 +1,11 @@
+[[plugin]]
+id = "Crazy-Explorer31/vpn-checker"
+name = "Example"
+version = "0.0.0"
+plugin_api = 43
+author = "noctalia"
+license = "MIT"
+dependencies = []
+tags = ["demo"]
+icon = "puzzle"
+description = "Plugin for showing VPN status in bar"
