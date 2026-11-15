@@ -1,0 +1,24 @@
+# Minimal reference plugin. Demonstrates the full bar-widget pipeline:
+# static manifest -> appears in the Add-widget picker -> renders/ticks ->
+# manifest-driven settings -> onIpc. Also ships a launcher provider that shows
+# launcher.setQuery() (type `/ex`).
+# See noctalia-docs plugins guide.
+
+id = "Crazy-Explorer31/vpn-checker"
+name = "Example"
+version = "0.0.0"
+plugin_api = 43
+author = "noctalia"
+license = "MIT"
+dependencies = []
+tags = ["demo"]
+icon = "puzzle"
+description = "Plugin for showing VPN status in bar"
+
+# Second bar widget: the same service tick rendered declaratively via
+# barWidget.render() (ui.* tree) instead of imperative setText/setGlyph -
+# including an inline ui.button whose click stays separate from the
+# widget-level onClick.
+[[widget]]
+id = "declarative"
+entry = "declarative.luau"
