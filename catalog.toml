@@ -1,6 +1,6 @@
 [[plugin]]
 id = "Crazy-Explorer31/vpn-checker"
-name = "Example"
+name = "vpn-checker"
 version = "0.0.0"
 plugin_api = 43
 author = "noctalia"
